@@ -2594,5 +2594,10 @@ document.addEventListener('keydown',function(ev){
   else if(ev.key==='e'||ev.key==='E'){openStorage();}
 });
 </script>
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('./sw.js');
+  }
+</script>
 </body>
 </html>
